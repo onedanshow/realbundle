@@ -1,19 +1,30 @@
 {
   "current": {
-    "colors_solid_button_labels": "#ffffff",
+    "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
-    "colors_accent_2": "#334fb4",
+    "colors_accent_2": "#334FB4",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "colors_background_1": "#ffffff",
-    "colors_background_2": "#f3f3f3",
-    "type_header_font": "americana_n4",
-    "type_body_font": "montserrat_n4",
-    "accent_icons": "text",
-    "social_twitter_link": "https:\/\/twitter.com\/realbundle",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F3F3F3",
+    "type_header_font": "assistant_n4",
+    "type_body_font": "assistant_n4",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
         "settings": {
         }
       },
@@ -29,26 +40,6 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "text",
-            "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "footer-1"
-        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
