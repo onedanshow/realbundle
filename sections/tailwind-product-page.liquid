@@ -148,15 +148,15 @@
         </video>
 
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+          <div class="grid grid-cols-2 gap-8">
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="{{ 'rentometer.png' | file_img_url }}" alt="Rentometer" loading="lazy">
+              <img class="max-h-8" src="{{ 'rentometer.png' | file_img_url: '400x' }}" alt="Rentometer" loading="lazy">
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="{{ 'Zillow-Logo.png' | file_img_url }}" alt="Zillow">
+              <img class="max-h-8" src="{{ 'Zillow-Logo.png' | file_img_url: '400x' }}" alt="Zillow">
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://www.zilculator.com/images/brands/automate-brands-mix.png" alt="Google">
+              <img class="max-h-8" src="{{ 'google-street-view.png' | file_img_url: '400x' }}" alt="Google">
             </div>
           </div>
         </div>
