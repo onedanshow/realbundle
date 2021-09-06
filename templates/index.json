@@ -1,13 +1,19 @@
 {
   "sections": {
     "tailwind-header": {
-      "type": "tailwind-header"
+      "type": "tailwind-header",
+      "settings": {
+      }
     },
     "tailwind-index-page": {
-      "type": "tailwind-index-page"
+      "type": "tailwind-index-page",
+      "settings": {
+      }
     },
     "tailwind-footer": {
-      "type": "tailwind-footer"
+      "type": "tailwind-footer",
+      "settings": {
+      }
     }
   },
   "order": [

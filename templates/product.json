@@ -1,13 +1,19 @@
 {
   "sections": {
     "tailwind-header": {
-      "type": "tailwind-header"
+      "type": "tailwind-header",
+      "settings": {
+      }
     },
     "tailwind-product-page": {
-      "type": "tailwind-product-page"
+      "type": "tailwind-product-page",
+      "settings": {
+      }
     },
     "tailwind-footer": {
-      "type": "tailwind-footer"
+      "type": "tailwind-footer",
+      "settings": {
+      }
     }
   },
   "order": [
