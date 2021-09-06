@@ -11,6 +11,8 @@
     "type_body_font": "assistant_n4",
     "checkout_logo_image": "shopify:\/\/shop_images\/realbundle-temp-logo.png",
     "checkout_logo_size": "small",
+    "checkout_heading_font": "Arvo",
+    "checkout_body_font": "PT Serif",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
