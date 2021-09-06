@@ -1,10 +1,18 @@
 {
   "sections": {
+    "tailwind-header": {
+      "type": "tailwind-header"
+    },
     "tailwind-index-page": {
       "type": "tailwind-index-page"
+    },
+    "tailwind-footer": {
+      "type": "tailwind-footer"
     }
   },
   "order": [
-    "tailwind-index-page"
+    "tailwind-header",
+    "tailwind-index-page",
+    "tailwind-footer"
   ]
 }

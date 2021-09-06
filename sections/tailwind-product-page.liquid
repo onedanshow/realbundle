@@ -1,448 +1,267 @@
-<div class="bg-white">
-  <header class="relative bg-white">
-    <p class="bg-blue-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
-      Limited Time! Save up to 86% on Zilculator.
-    </p>
+<main class="mx-auto pt-14 pb-24 px-4 sm:pt-16 sm:pb-32 sm:px-6 lg:max-w-7xl lg:px-8">
+  <!-- Product -->
+  <div class="lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
+    <!-- Product image -->
+    <div class="lg:row-end-1 lg:col-span-4">
+      <div class="aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
+        <img src="{{ 'headliner.jpg' | asset_url }}" alt="Zilculator" class="object-center object-cover">
+      </div>
+    </div>
 
-    <nav aria-label="Top" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="border-b border-gray-200">
-        <div class="h-16 flex items-center">
-          <!-- Mobile menu toggle, controls the 'mobileMenuOpen' state. -->
-          <button type="button" class="bg-white p-2 rounded-md text-gray-400 lg:hidden">
-            <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: outline/menu -->
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    <!-- Product details -->
+    <div class="max-w-2xl mx-auto mt-14 sm:mt-16 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3">
+      <div class="flex flex-col-reverse">
+        <div class="mt-4">
+          <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Zilculator</h1>
+
+          <h2 id="information-heading" class="sr-only">Product information</h2>
+          <p class="text-sm text-gray-500 mt-2">Pro Plan</p>
+
+          <span class="mt-4 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+            Exclusive Deal
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-pink-100 text-pink-800">
+            Limited Licenses Available
+          </span>
+        </div>
+
+        <div>
+          <h3 class="sr-only">Reviews</h3>
+          <div class="flex items-center">
+            <!--
+              Heroicon name: solid/star
+
+              Active: "text-yellow-400", Default: "text-gray-300"
+            -->
+            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
-          </button>
 
-          <!-- Logo -->
-          <div class="ml-4 flex lg:ml-0">
-            <a href="#">
-              <span class="sr-only">Workflow</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=blue&shade=600" alt="">
-            </a>
+            <!-- Heroicon name: solid/star -->
+            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <!-- Heroicon name: solid/star -->
+            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <!-- Heroicon name: solid/star -->
+            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <!-- Heroicon name: solid/star -->
+            <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
           </div>
-
-          <!-- Flyout menus -->
-          <div class="hidden lg:ml-8 lg:block lg:self-stretch">
-            <div class="h-full flex space-x-8">
-              <a href="#" class="flex items-center text-sm font-medium text-blue-600 border-blue-600 hover:text-gray-800 border-b-2">
-                Today's Deal
-              </a>
-
-              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">
-                Agent Bundle
-              </a>
-
-              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">
-                Investor Bundle
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="mx-auto pt-14 pb-24 px-4 sm:pt-16 sm:pb-32 sm:px-6 lg:max-w-7xl lg:px-8">
-    <!-- Product -->
-    <div class="lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
-      <!-- Product image -->
-      <div class="lg:row-end-1 lg:col-span-4">
-        <div class="aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
-          <img src="{{ 'headliner.jpg' | asset_url }}" alt="Zilculator" class="object-center object-cover">
+          <p class="sr-only">5 out of 5 stars</p>
         </div>
       </div>
 
-      <!-- Product details -->
-      <div class="max-w-2xl mx-auto mt-14 sm:mt-16 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3">
-        <div class="flex flex-col-reverse">
-          <div class="mt-4">
-            <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Zilculator</h1>
+      <p class="text-gray-500 mt-6">Share investor-grade property analysis with your clients, whether house hackers, digital nomads, or seasoned real estate investors.</p>
 
-            <h2 id="information-heading" class="sr-only">Product information</h2>
-            <p class="text-sm text-gray-500 mt-2">Pro Plan</p>
+      <p class="text-gray-500 mt-6">With the Zilculator Pro Plan, you can provide professional income-scenario reports with ease for up to 20 of your listings at a time.</p>
 
-            <span class="mt-4 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-              Exclusive Deal
-            </span>
-            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-pink-100 text-pink-800">
-              Limited Licenses Available
-            </span>
-          </div>
+      <p class="text-gray-500 mt-6">Don't miss this limited-time deal on <a href="https://www.zilculator.com/?deal=daniel61" target="blank" class='underline font-semibold text-blue-500'>Zilculator</a></p>
 
-          <div>
-            <h3 class="sr-only">Reviews</h3>
-            <div class="flex items-center">
-              <!--
-                Heroicon name: solid/star
-
-                Active: "text-yellow-400", Default: "text-gray-300"
-              -->
-              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <!-- Heroicon name: solid/star -->
-              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <!-- Heroicon name: solid/star -->
-              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <!-- Heroicon name: solid/star -->
-              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-
-              <!-- Heroicon name: solid/star -->
-              <svg class="text-yellow-400 h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-            </div>
-            <p class="sr-only">5 out of 5 stars</p>
-          </div>
-        </div>
-
-        <p class="text-gray-500 mt-6">Share investor-grade property analysis with your clients, whether house hackers, digital nomads, or seasoned real estate investors.</p>
-
-        <p class="text-gray-500 mt-6">With the Zilculator Pro Plan, you can provide professional income-scenario reports with ease for up to 20 of your listings at a time.</p>
-
-        <p class="text-gray-500 mt-6">Don't miss this limited-time deal on <a href="https://www.zilculator.com/?deal=daniel61" target="blank" class='underline font-semibold text-blue-500'>Zilculator</a></p>
-
-        <div class="mt-10">
-        <a href="https://realbundle.myshopify.com/cart/32903819165792:1" class="w-full flex justify-between bg-blue-600 border border-transparent rounded-md py-3 px-8 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
-            <span>Buy 1 Year License</span> <span>$39 <span class="line-through opacity-75 text-red-300 text-xl">$282</span></span>
-          </a> 
-          <a href="https://realbundle.myshopify.com/cart/32903819198560:1" class="mt-5 w-full flex justify-between bg-blue-600 border border-transparent rounded-md py-3 px-8 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
-            <span>Buy Lifetime License</span> <span>$349 <span class="line-through opacity-75 text-red-300 text-xl">$2,280+</span></span>
-          </a>
-        </div>
-
-        <div class="border-t border-gray-200 mt-10 pt-10">
-          <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
-          <div class="mt-4 prose prose-sm text-gray-500">
-            <ul role="list">
-              <li>Attract & help buyers who want income-generating properties</li>
-              <li>Create shareable property flyers with one click</li>
-              <li>Analyze & compare up to 20 properties at time</li>              
-              <li>Perfect for single-family, multi-family, or commercial properties</li>
-            </ul>
-          </div>
-        </div>
+      <div class="mt-10">
+      <a href="https://realbundle.myshopify.com/cart/32903819165792:1" class="w-full flex justify-between bg-gradient-to-r from-purple-600 to-blue-600 bg-origin-border border border-transparent rounded-md py-3 px-8 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
+          <span>Buy 1 Year License</span> <span>$39 <span class="line-through opacity-75 text-red-300 text-xl">$282</span></span>
+        </a> 
+        <a href="https://realbundle.myshopify.com/cart/32903819198560:1" class="mt-5 w-full flex justify-between bg-gradient-to-r from-purple-600 to-blue-600 bg-origin-border border border-transparent rounded-md py-3 px-8 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-blue-500">
+          <span>Buy Lifetime License</span> <span>$349 <span class="line-through opacity-75 text-red-300 text-xl">$2,280+</span></span>
+        </a>
       </div>
 
-      <div class="w-full max-w-2xl mx-auto mt-16 lg:max-w-none lg:mt-0 lg:col-span-4">
-        <h3 class="text-xl md:text-lg font-medium text-gray-900">Zilculator is an in-depth property analysis tool to help your buyers looking for properties that produce income.</h3>
-        <p class="mt-4 text-sm text-gray-500">
-          The numbers don't lie and you can show it. With Zilculator, you can quickly and easily run income scenarios for a new or seasoned client who's looking for a property that makes money.
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          Quickly see a property's potential cash flow from short-term or long-term tenants. 
-          Easily show how "deferred maintenance" can become a managable fix-and-flip. Zilculator does all the hard work for you.
-        </p>
-
-        <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Walk clients through their rental-income options</h3>  
-        <p class="mt-4 text-sm text-gray-500">
-          In the era of HGTV, AirBnb, and BiggerPockets, every buyer knows their property can do more. 
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          With Zilculator, share a simple report with your buyers to show what that mother-in-law suite or other duplex side can really do.  
-          Likewise, you can show what that same property could do when turned it into a full-time rental.
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          With four presets to choose from, Zilculator lets you choose what the report shows and how it's shared. Even if your client is a newbie when it comes to being a landlord, Zilculator structures the possibilities nicely.
-        </p>
-        <div class="mt-4 aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
-          <img src="{{ 'mobile-app.jpg' | file_img_url: '1000x' }}" alt="Zilculator" class="object-center object-cover" loading="lazy">
-        </div>
-
-        <h3 class="mt-4 text-xl md:text-lg font-medium text-gray-900">Get a listing from a fix-and-flip</h3>
-        <p class="mt-4 text-sm text-gray-500">
-          Be your cash buyers' best friend by helping them locate and then list the property types they like to rehab. 
-          Use Zilculator's comprehensive and professional reports to show the numbers fast, whether single-family, multi-family, or commercial.
-        </p>
-        <p class="mt-4 text-sm text-gray-500">          
-          Then, when the last contractor is done, serve as the listing agent for the beautiful done rehabbed property. 
-          Zilculator helps make you an end-to-end package for your clients when a deal comes your way.
-        </p>
-        <div class="mt-4 aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
-          <img src="{{ 'creating-a-property.jpg' | file_img_url: '1000x' }}" alt="Zilculator" class="object-center object-cover" loading="lazy">
-        </div>
-
-        <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Show your cash buyers all the numbers</h3>  
-        <p class="mt-4 text-sm text-gray-500">
-          With the hot market we're in, properties move quickly and so do your serious clients. 
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          You can swiftly show a full deal breakdown for your serious investors with the end-to-end analysis provided by Zilculator's powerful algorithms.  
-          Whether the investor is fix-and-flip or buy-and-hold, Zilculator's reports will have the numbers that they want to see.
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          Zilculator will differentiate you from the crowd, especially if your client is not a full-time investor. 
-          Making a report with Zilcualtor only takes you a 1-minute to spin out a breakdown for a new property. 
-        </p>
-        <div class="flex justify-center my-6">
-          <a href="https://www.zilculator.com/properties/rental-property-sample/10518067104beb20664ba9e?deal=daniel61" target="_blank" class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            View a Sample Report
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-          </a>
-        </div>
-
-        <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Automatically grabs square footage, photos, comps, and more</h3>
-        <p class="mt-4 text-sm text-gray-500">
-          The moment you type the street name, Zilculator starts working. 
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          Just select the property address from the auto-suggested list and magically the property's photos, description, prices, and comparbles are pulled in. 
-          You have complete control to change any number or break it out further into line items.
-        </p>
-        <p class="mt-4 text-sm text-gray-500">
-          Like you, Zilculator is all about the speed of getting information to your client.
-        </p>
-        <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-          <div class="col-span-1 flex justify-center py-8 px-2 bg-gray-50 rounded">
-            <img class="max-h-12" src="{{ 'rentometer.png' | file_img_url: '400x' }}" alt="Rentometer" loading="lazy">
-          </div>
-          <div class="col-span-1 flex justify-center py-8 px-2 bg-gray-50 rounded">
-            <img class="max-h-12" src="{{ 'Zillow-Logo.png' | file_img_url: '400x' }}" alt="Zillow" loading="lazy">
-          </div>
-          <div class="col-span-1 flex justify-center items-center py-8 px-2 bg-gray-50 rounded">
-            <img class="max-h-8" src="{{ 'google-street-view.png' | file_img_url: '400x' }}" alt="Google" loading="lazy">
-          </div>
-        </div>
-
-        <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Use Zilculator for your own properties, too</h3>
-        <p class="mt-4 text-sm text-gray-500">No one has access to the deal flow like agents. Flex your own chops! Use Zilculator to analyze your own next rental or flip.</p>
-
-        <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Take advantage of this exclusive, limited-time deal</h3>
-        <p class="mt-4 text-sm text-gray-500">You won't find this deal on Zilculator anywhere else but here on RealBundle. <span class='font-semibold'>We only have a limited number of licenses available.</span> Save big and grab your license today!</p>
-
-        <div class='mt-6'>
-          <div class="border-b border-gray-200">
-            <div class="-mb-px flex space-x-8" aria-orientation="horizontal" role="tablist">
-              <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300" -->
-              <button id="tab-reviews" class="border-blue-600 text-blue-600 whitespace-nowrap py-6 border-b-2 font-medium text-sm" 
-                aria-controls="tab-panel-reviews" role="tab" type="button"
-                onclick="tabChange('reviews')">
-                Customer Reviews
-              </button>
-              <button id="tab-faq" class="border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300 whitespace-nowrap py-6 border-b-2 font-medium text-sm" 
-                aria-controls="tab-panel-faq" role="tab" type="button"
-                onclick="tabChange('faq')">
-                FAQ
-              </button>
-            </div>
-          </div>
-          <script>
-            function tabChange(id) {
-              Array.from(document.querySelectorAll('[role="tab"]')).forEach((el) => {
-                el.classList.remove('border-blue-600','text-blue-600')
-                el.classList.add('border-transparent','text-gray-700','hover:text-gray-800','hover:border-gray-300')
-              })
-              Array.from(document.querySelectorAll('[role="tabpanel"]')).forEach((el) => el.style.display = "none")
-              document.getElementById(`tab-${id}`).classList.add('border-blue-600','text-blue-600')
-              document.getElementById(`tab-panel-${id}`).style.display = "block"
-            }
-          </script>
-
-          <!-- 'Customer Reviews' panel, show/hide based on tab state -->
-          <div id="tab-panel-reviews" class="-mb-10" aria-labelledby="tab-reviews" role="tabpanel" tabindex="0">
-            <h3 class="sr-only">Customer Reviews</h3>
-
-            {% render 'tailwind-review',
-              image_url: 'https://www.zilculator.com/images/landing/chris_w.jpg',
-              name: 'Chris W.',
-              title: 'Realtor',
-              review: 'Zilculator is hands down one of the best real estate tools on the market. As a real estate agent, I use it daily to quickly create clear, but detailed reports for deals we offer to our buyers/investors.' %}   
-
-            {% render 'tailwind-review',
-              image_url: '',
-              name: 'Rafael C.',
-              title: 'Realtor',
-              review: "It's a great tool to get more listings and sell faster to buyers. We were able to use Zilculator reports to tell the seller, 'Here's what we are going to present to the buyers.'" %}                 
-
-            {% render 'tailwind-review',
-              image_url: 'https://www.zilculator.com/images/landing/cameron_m.jpg',
-              name: 'Cameron M.',
-              title: 'Wholesaler',
-              review: 'High impressed with the software! Very valuable for presentation of deals for both investors and agents.' %}
-
-            {% render 'tailwind-review',
-              image_url: 'https://www.zilculator.com/images/landing/reginald_j.jpg',
-              name: 'Reggie J.',
-              title: 'Realtor',
-              review: 'Zilculator is the best, it is easy to use and a very professional software.' %}
-
-            {% render 'tailwind-review',
-              image_url: 'https://www.zilculator.com/images/landing/nicole_b.jpg',
-              name: 'Nicole B.',
-              title: 'Realtor',
-              review: 'A crucial tool for our business!' %}              
-
-          </div>
-
-          <!-- 'FAQ' panel, show/hide based on tab state -->
-          <dl id="tab-panel-faq" class="text-sm text-gray-500" aria-labelledby="tab-faq" role="tabpanel" tabindex="0" style="display:none">
-            <h3 class="sr-only">Frequently Asked Questions</h3>
-
-            {% render 'tailwind-faq',
-              question: "What is Zilculator?",
-              answer: "Zilculator is web-based software that you can use to analyze any property for its income-producing potential." %}
-
-            {% render 'tailwind-faq',
-              question: "What happens after I purchase a license on RealBundle?",
-              answer: "After checkout, you'll recieve a unique code and a special sign-up link to Zilculator just for RealBundle customers." %}
-
-            {% render 'tailwind-faq',
-              question: "What if Zilculator is not for me after I purchase a license?",
-              answer: "No worries. You have 30-days from date of purchase to request a full refund." %}
-
-            {% render 'tailwind-faq',
-              question: "If I'm already a Zilculator customer, can I partake in this deal?",
-              answer: "Sorry, for this is for new customers only." %}              
-
-          </dl>
-
+      <div class="border-t border-gray-200 mt-10 pt-10">
+        <h3 class="text-sm font-medium text-gray-900">Highlights</h3>
+        <div class="mt-4 prose prose-sm text-gray-500">
+          <ul role="list">
+            <li>Attract & help buyers who want income-generating properties</li>
+            <li>Create shareable property flyers with one click</li>
+            <li>Analyze & compare up to 20 properties at time</li>              
+            <li>Perfect for single-family, multi-family, or commercial properties</li>
+          </ul>
         </div>
       </div>
     </div>
-  </main>
 
-  <footer aria-labelledby="footer-heading" class="bg-gray-50">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="py-20 grid grid-cols-1 md:grid-cols-12 md:grid-flow-col md:gap-x-8 md:gap-y-16 md:auto-rows-min">
-        <!-- Image section -->
-        <div class="col-span-1 md:col-span-2 lg:row-start-1 lg:col-start-1">
-          <img src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto">
+    <div class="w-full max-w-2xl mx-auto mt-16 lg:max-w-none lg:mt-0 lg:col-span-4">
+      <h3 class="text-xl md:text-lg font-medium text-gray-900">Zilculator is an in-depth property analysis tool to help your buyers looking for properties that produce income.</h3>
+      <p class="mt-4 text-sm text-gray-500">
+        The numbers don't lie and you can show it. With Zilculator, you can quickly and easily run income scenarios for a new or seasoned client who's looking for a property that makes money.
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        Quickly see a property's potential cash flow from short-term or long-term tenants. 
+        Easily show how "deferred maintenance" can become a managable fix-and-flip. Zilculator does all the hard work for you.
+      </p>
+
+      <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Walk clients through their rental-income options</h3>  
+      <p class="mt-4 text-sm text-gray-500">
+        In the era of HGTV, AirBnb, and BiggerPockets, every buyer knows their property can do more. 
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        With Zilculator, share a simple report with your buyers to show what that mother-in-law suite or other duplex side can really do.  
+        Likewise, you can show what that same property could do when turned it into a full-time rental.
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        With four presets to choose from, Zilculator lets you choose what the report shows and how it's shared. Even if your client is a newbie when it comes to being a landlord, Zilculator structures the possibilities nicely.
+      </p>
+      <div class="mt-4 aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
+        <img src="{{ 'mobile-app.jpg' | file_img_url: '1000x' }}" alt="Zilculator" class="object-center object-cover" loading="lazy">
+      </div>
+
+      <h3 class="mt-4 text-xl md:text-lg font-medium text-gray-900">Get a listing from a fix-and-flip</h3>
+      <p class="mt-4 text-sm text-gray-500">
+        Be your cash buyers' best friend by helping them locate and then list the property types they like to rehab. 
+        Use Zilculator's comprehensive and professional reports to show the numbers fast, whether single-family, multi-family, or commercial.
+      </p>
+      <p class="mt-4 text-sm text-gray-500">          
+        Then, when the last contractor is done, serve as the listing agent for the beautiful done rehabbed property. 
+        Zilculator helps make you an end-to-end package for your clients when a deal comes your way.
+      </p>
+      <div class="mt-4 aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
+        <img src="{{ 'creating-a-property.jpg' | file_img_url: '1000x' }}" alt="Zilculator" class="object-center object-cover" loading="lazy">
+      </div>
+
+      <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Show your cash buyers all the numbers</h3>  
+      <p class="mt-4 text-sm text-gray-500">
+        With the hot market we're in, properties move quickly and so do your serious clients. 
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        You can swiftly show a full deal breakdown for your serious investors with the end-to-end analysis provided by Zilculator's powerful algorithms.  
+        Whether the investor is fix-and-flip or buy-and-hold, Zilculator's reports will have the numbers that they want to see.
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        Zilculator will differentiate you from the crowd, especially if your client is not a full-time investor. 
+        Making a report with Zilcualtor only takes you a 1-minute to spin out a breakdown for a new property. 
+      </p>
+      <div class="flex justify-center my-6">
+        <a href="https://www.zilculator.com/properties/rental-property-sample/10518067104beb20664ba9e?deal=daniel61" target="_blank" class="inline-flex items-center px-3 py-2 border border-transparent shadow-sm text-sm leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          View a Sample Report
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        </a>
+      </div>
+
+      <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Automatically grabs square footage, photos, comps, and more</h3>
+      <p class="mt-4 text-sm text-gray-500">
+        The moment you type the street name, Zilculator starts working. 
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        Just select the property address from the auto-suggested list and magically the property's photos, description, prices, and comparbles are pulled in. 
+        You have complete control to change any number or break it out further into line items.
+      </p>
+      <p class="mt-4 text-sm text-gray-500">
+        Like you, Zilculator is all about the speed of getting information to your client.
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+        <div class="col-span-1 flex justify-center py-8 px-2 bg-gray-50 rounded">
+          <img class="max-h-12" src="{{ 'rentometer.png' | file_img_url: '400x' }}" alt="Rentometer" loading="lazy">
         </div>
-
-        <!-- Sitemap sections -->
-        <div class="mt-10 col-span-6 grid grid-cols-2 gap-8 sm:grid-cols-3 md:mt-0 md:row-start-1 md:col-start-3 md:col-span-8 lg:col-start-2 lg:col-span-6">
-          <div class="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8">
-            <div>
-              <h3 class="text-sm font-medium text-gray-900">
-                Products
-              </h3>
-              <ul role="list" class="mt-6 space-y-6">
-                <li class="text-sm">
-                  <a href="#" class="text-blue-500 hover:text-gray-600">
-                    Today's Deal
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Agent Bundle
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Investor Bundle
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-sm font-medium text-gray-900">
-                Company
-              </h3>
-              <ul role="list" class="mt-6 space-y-6">
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Who we are
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Open Source
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Press
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Careers
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    License
-                  </a>
-                </li>
-
-                <li class="text-sm">
-                  <a href="#" class="text-gray-500 hover:text-gray-600">
-                    Privacy
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-sm font-medium text-gray-900">
-              Customer Service
-            </h3>
-            <ul role="list" class="mt-6 space-y-6">
-              <li class="text-sm">
-                <a href="#" class="text-gray-500 hover:text-gray-600">
-                  Chat
-                </a>
-              </li>
-
-              <li class="text-sm">
-                <a href="#" class="text-gray-500 hover:text-gray-600">
-                  Contact
-                </a>
-              </li>
-
-              <li class="text-sm">
-                <a href="#" class="text-gray-500 hover:text-gray-600">
-                  Secure Payments
-                </a>
-              </li>
-
-              <li class="text-sm">
-                <a href="#" class="text-gray-500 hover:text-gray-600">
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-span-1 flex justify-center py-8 px-2 bg-gray-50 rounded">
+          <img class="max-h-12" src="{{ 'Zillow-Logo.png' | file_img_url: '400x' }}" alt="Zillow" loading="lazy">
         </div>
-
-        <!-- Newsletter section -->
-        <div class="mt-12 md:mt-0 md:row-start-2 md:col-start-3 md:col-span-8 lg:row-start-1 lg:col-start-9 lg:col-span-4">
-          <h3 class="text-sm font-medium text-gray-900">Sign up for our newsletter</h3>
-          <p class="mt-1 text-sm text-gray-500">Be the first to know when we release new products.</p>
-          <form class="mt-3 sm:flex lg:block xl:flex">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" type="text" autocomplete="email" required class="block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 sm:flex-1 sm:min-w-0 sm:max-w-xs lg:max-w-none">
-            <div class="mt-4 sm:mt-0 sm:ml-4 sm:flex-shrink-0 lg:mt-4 lg:ml-0 xl:mt-0 xl:ml-4">
-              <button type="submit" class="w-full bg-indigo-600 border border-transparent rounded-md shadow-sm py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Sign up
-              </button>
-            </div>
-          </form>
+        <div class="col-span-1 flex justify-center items-center py-8 px-2 bg-gray-50 rounded">
+          <img class="max-h-8" src="{{ 'google-street-view.png' | file_img_url: '400x' }}" alt="Google" loading="lazy">
         </div>
       </div>
 
-      <div class="border-t border-gray-200 py-10 text-center">
-        <p class="text-sm text-gray-500">&copy; 2021 Oak Ellum LLC d.b.a. RealBundle</p>
+      <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Use Zilculator for your own properties, too</h3>
+      <p class="mt-4 text-sm text-gray-500">No one has access to the deal flow like agents. Flex your own chops! Use Zilculator to analyze your own next rental or flip.</p>
+
+      <h3 class="mt-6 text-xl md:text-lg font-medium text-gray-900">Take advantage of this exclusive, limited-time deal</h3>
+      <p class="mt-4 text-sm text-gray-500">You won't find this deal on Zilculator anywhere else but here on RealBundle. <span class='font-semibold'>We only have a limited number of licenses available.</span> Save big and grab your license today!</p>
+
+      <div class='mt-6'>
+        <div class="border-b border-gray-200">
+          <div class="-mb-px flex space-x-8" aria-orientation="horizontal" role="tablist">
+            <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300" -->
+            <button id="tab-reviews" class="border-blue-600 text-blue-600 whitespace-nowrap py-6 border-b-2 font-medium text-sm" 
+              aria-controls="tab-panel-reviews" role="tab" type="button"
+              onclick="tabChange('reviews')">
+              Customer Reviews
+            </button>
+            <button id="tab-faq" class="border-transparent text-gray-700 hover:text-gray-800 hover:border-gray-300 whitespace-nowrap py-6 border-b-2 font-medium text-sm" 
+              aria-controls="tab-panel-faq" role="tab" type="button"
+              onclick="tabChange('faq')">
+              FAQ
+            </button>
+          </div>
+        </div>
+        <script>
+          function tabChange(id) {
+            Array.from(document.querySelectorAll('[role="tab"]')).forEach((el) => {
+              el.classList.remove('border-blue-600','text-blue-600')
+              el.classList.add('border-transparent','text-gray-700','hover:text-gray-800','hover:border-gray-300')
+            })
+            Array.from(document.querySelectorAll('[role="tabpanel"]')).forEach((el) => el.style.display = "none")
+            document.getElementById(`tab-${id}`).classList.add('border-blue-600','text-blue-600')
+            document.getElementById(`tab-panel-${id}`).style.display = "block"
+          }
+        </script>
+
+        <!-- 'Customer Reviews' panel, show/hide based on tab state -->
+        <div id="tab-panel-reviews" class="-mb-10" aria-labelledby="tab-reviews" role="tabpanel" tabindex="0">
+          <h3 class="sr-only">Customer Reviews</h3>
+
+          {% render 'tailwind-review',
+            image_url: 'https://www.zilculator.com/images/landing/chris_w.jpg',
+            name: 'Chris W.',
+            title: 'Realtor',
+            review: 'Zilculator is hands down one of the best real estate tools on the market. As a real estate agent, I use it daily to quickly create clear, but detailed reports for deals we offer to our buyers/investors.' %}   
+
+          {% render 'tailwind-review',
+            image_url: '',
+            name: 'Rafael C.',
+            title: 'Realtor',
+            review: "It's a great tool to get more listings and sell faster to buyers. We were able to use Zilculator reports to tell the seller, 'Here's what we are going to present to the buyers.'" %}                 
+
+          {% render 'tailwind-review',
+            image_url: 'https://www.zilculator.com/images/landing/cameron_m.jpg',
+            name: 'Cameron M.',
+            title: 'Wholesaler',
+            review: 'High impressed with the software! Very valuable for presentation of deals for both investors and agents.' %}
+
+          {% render 'tailwind-review',
+            image_url: 'https://www.zilculator.com/images/landing/reginald_j.jpg',
+            name: 'Reggie J.',
+            title: 'Realtor',
+            review: 'Zilculator is the best, it is easy to use and a very professional software.' %}
+
+          {% render 'tailwind-review',
+            image_url: 'https://www.zilculator.com/images/landing/nicole_b.jpg',
+            name: 'Nicole B.',
+            title: 'Realtor',
+            review: 'A crucial tool for our business!' %}              
+
+        </div>
+
+        <!-- 'FAQ' panel, show/hide based on tab state -->
+        <dl id="tab-panel-faq" class="text-sm text-gray-500" aria-labelledby="tab-faq" role="tabpanel" tabindex="0" style="display:none">
+          <h3 class="sr-only">Frequently Asked Questions</h3>
+
+          {% render 'tailwind-faq',
+            question: "What is Zilculator?",
+            answer: "Zilculator is web-based software that you can use to analyze any property for its income-producing potential." %}
+
+          {% render 'tailwind-faq',
+            question: "What happens after I purchase a license on RealBundle?",
+            answer: "After checkout, you'll recieve a unique code and a special sign-up link to Zilculator just for RealBundle customers." %}
+
+          {% render 'tailwind-faq',
+            question: "What if Zilculator is not for me after I purchase a license?",
+            answer: "No worries. You have 30-days from date of purchase to request a full refund." %}
+
+          {% render 'tailwind-faq',
+            question: "If I'm already a Zilculator customer, can I partake in this deal?",
+            answer: "Sorry, for this is for new customers only." %}              
+
+        </dl>
+
       </div>
     </div>
-  </footer>
-</div>
+  </div>
+</main>
