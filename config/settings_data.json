@@ -10,6 +10,7 @@
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "checkout_logo_image": "shopify:\/\/shop_images\/realbundle-temp-logo.png",
+    "checkout_logo_size": "small",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
