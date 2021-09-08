@@ -1,7 +1,9 @@
 <div class="flex text-sm text-gray-500 space-x-4">
   <div class="flex-none py-10">
     {%- if image_url != blank -%}
-      <img src="{{ image_url }}" alt="" class="w-10 h-10 bg-gray-100 rounded-full" loading="lazy">
+      <img src="{{ image_url }}" alt="{{ name }}" class="w-10 h-10 bg-gray-100 rounded-full" loading="lazy">
+    {%- elsif image_name != blank -%}
+    <img src="{{ image_name | file_img_url: '60x' }}" alt="{{ name }}" class="w-10 h-10 bg-gray-100 rounded-full" loading="lazy">
     {%- else -%}
       <div class="w-10 h-10 bg-gray-100 rounded-full"></div>
     {%- endif -%}
