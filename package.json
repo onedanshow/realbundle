@@ -1,6 +1,14 @@
 {
+  "scripts": {
+    "dev": "concurrently \"yarn run theme-serve\" \"yarn run tailwind-watch\"",
+    "tailwind-watch": "npx tailwindcss -o ./assets/tailwind.css.liquid --jit --watch",
+    "theme-serve": "shopify theme dev --store=realbundle"
+  },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "tailwindcss": "^2.2.9"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
